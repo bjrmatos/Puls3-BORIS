@@ -1,0 +1,200 @@
+/*
+-Imagenes con menos de 256 colores o con canales de transparencia se usa png ,
+imagenes con mayor cantidad de colores como una foto se usa jpg
+
+-Para que una imagen se vea bien en monitores "retina display"
+debemos exportar la imagen al doble de su resolucion original,
+quiere decir que si tienes un logo de 80x80pix debes exportarlo
+a 160x160pix y achicarlo con css, para conservar la calidad en "retina display"
+
+(con los jpg podemos exportar al doble de la resolucion y al 50% de la calidad
+para que sea mas compacta en tamaño y se va a ver bien)
+
+-Los valores DPI de las imagenes no sirven para nada en la web, solo
+sirven para temas de impresion.
+
+ */
+
+/*
+
+    REGLAS DE CODIFICACIÓN EN CSS
+
+    1. Todos los atributos en orden alfabético
+    2. Orden de estilos:
+        *. pre-render (@font-face,@media-query)
+        1. etiquetas
+        2. IDs
+        3. Clases
+    3. Orden alfabético todos los estilos
+    4. Identar y hacer código LINDO
+
+ */
+
+a
+{
+	color: #DD4F24;
+}
+body
+{
+	background: #EFEFEF;
+	color: #4C4C4C;
+	font-family: "PT Sans", Arial;
+	font-size: 16px; /* Aconsejable que tamaño sea 16 para lectura como minimo */
+	margin: 0;
+}
+header
+{
+	background: #434343;
+	color: white;
+	/*
+    Pensar en pixeles en margenes y padding segun mejorando.la es un error
+    se debe usar valores expresados en "em", el cual es valor variable en css
+    que es relativo al tamaño de fuente mas cercana dirigiendo hacia arriba en el
+    arbol de html (busqueda hacia los padres del elemento).
+    Es mejor pensar en margenes y padding relativos al tamaño de fuentes y no
+    al pixel perfect debido a las diferentes resoluciones en las que
+    se puede visualizar nuestra pagina
+    (em puede ser aplicado a cualquier cosa no especialmente margin y padding)
+    */
+	padding: 0.5em; /* En este caso 1em -> 16px y 0.5em -> 8px */
+	text-align: left;
+
+	/*
+    Por ultimo los elementos inline no son cajas por lo tanto no se les puede
+    aplicar margin ni padding (algunos casos en que si se puede),
+    etc es como si fueran texto flotante,
+    aplicando inline-block puedes darle estilos como caja
+    */
+
+}
+header figure, header h1
+{
+	/* La desventaja de inline-block es que las cajas deben mantener
+    mantener un ancho perfecto para que las cajas sigan flotando entre si
+    */
+	display: inline-block;
+	vertical-align: top;
+}
+header h1
+{
+	font-size: 20px;
+	font-weight: normal;
+	margin: 1em 0 0 1em;
+	width: 60%;
+}
+header #avatar
+{
+	margin: 1em 1em 0 0;
+	float: right;
+}
+header #avatar figcaption
+{
+	background: #22BCE0;
+	display: inline-block;
+	float: right;
+	height: 50px;
+	padding: 0 2px;
+}
+header #avatar img
+{
+	float: left;
+	/* Solo se coloca el ancho y el alto automaticamente lo calcula el navegador */
+	width: 50px;
+}
+header #logo img
+{
+	width: 80px;
+}
+nav
+{
+	background: #878787;
+	color: white;
+	font-size: 0.9em;
+}
+nav ul
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+nav ul li
+{
+	display: inline-block;
+	margin: 0 1.2em 0 0;
+	vertical-align: top;
+}
+nav ul li a
+{
+	color:  white;
+	display: block;
+	padding: 0.5em 0;
+}
+nav #flechita_nav
+{
+	background: #22BCE0;
+}
+nav #flechita_nav a
+{
+	padding: 0.5em 0.5em;
+	text-decoration: none;
+}
+nav #publicar_nav
+{
+	background: #DD4F24;
+	float: right;
+	margin-right: 0;
+}
+nav #publicar_nav a
+{
+	padding: 0.5em 1em;
+	text-decoration: none;
+}
+#contenido
+{
+	margin: 1em;
+}
+#contenido .datos_item .tag_item
+{
+	background: #22BCE0;
+	border-radius: 0.5em;
+	color: white;
+	padding: 0.2em 0.5em;
+	text-decoration: none;
+}
+#contenido .item
+{
+	border-bottom: 3px #22BCE0 solid;
+	background: white;
+}
+#contenido .item p
+{
+	color: #7A7A7A;
+	font-size: 0.9em;
+}
+#contenido .item .imagen_item
+{
+	float: left;
+	margin: 0 0.5em 0 0;
+}
+#contenido .item .imagen_item img
+{
+	width: 96px;
+}
+#contenido .item .titulo_item
+{
+	font-size: 1rem;
+    font-style: italic;
+	padding: 0.5em 0.5em 0;
+}
+#contenido .item .titulo_item a
+{
+	color: #444;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
