@@ -9,9 +9,37 @@ Conceptos de "referencia" sobre la resolucion de dispositivos
 @media screen and (min-width: 768px){
     body
     {
-        border: 3px solid red;
         margin: 0 auto;
         max-width: 1200px;
+    }
+    #bienvenida
+    {
+        border-bottom: 1px solid #CCC;
+        display: block;
+        float: right;
+        margin-right: 2px;
+        width: 25%;
+    }
+    #bienvenida h2
+    {
+        color: #434343;
+    }
+    #bienvenida #mensaje_registro,
+    #bienvenida #registro
+    {
+        text-align: center;
+    }
+    #bienvenida #mensaje_registro
+    {
+        font-size: 0.8em;
+    }
+    #bienvenida #registro
+    {
+        background-color: #22BCE0;
+        color: white;
+        display: block;
+        font-size: 1.2em;
+        padding: 0.5em 0;
     }
     #contenido
     {

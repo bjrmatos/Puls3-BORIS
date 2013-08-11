@@ -52,6 +52,18 @@ body
 	font-size: 16px; /* Aconsejable que tamaño sea 16 para lectura como minimo */
 	margin: 0;
 }
+footer
+{
+    background: #434343;
+    color: #A7A7A7;
+    padding: 5em 0;
+    text-align: center;
+    width: 100%;
+}
+footer p
+{
+    margin: 0;
+}
 header
 {
 	background: #434343;
@@ -187,6 +199,10 @@ nav #publicar_nav a
     display: inline-block;
 	padding: 0.5em 1em;
 	text-decoration: none;
+}
+#bienvenida
+{
+    display: none;
 }
 #contenido
 {
