@@ -8,7 +8,7 @@ quiere decir que si tienes un logo de 80x80pix debes exportarlo
 a 160x160pix y achicarlo con css, para conservar la calidad en "retina display"
 
 (con los jpg podemos exportar al doble de la resolucion y al 50% de la calidad
-para que sea mas compacta en tamaño y se va a ver bien)
+para que sea mas compacta en tamaÃ±o y se va a ver bien)
 
 -Los valores DPI de las imagenes no sirven para nada en la web, solo
 sirven para temas de impresion.
@@ -17,16 +17,16 @@ sirven para temas de impresion.
 
 /*
 
-    REGLAS DE CODIFICACIÓN EN CSS
+    REGLAS DE CODIFICACIÃ“N EN CSS
 
-    1. Todos los atributos en orden alfabético
+    1. Todos los atributos en orden alfabÃ©tico
     2. Orden de estilos:
         *. pre-render (@font-face,@media-query)
         1. etiquetas
         2. IDs
         3. Clases
-    3. Orden alfabético todos los estilos
-    4. Identar y hacer código LINDO
+    3. Orden alfabÃ©tico todos los estilos
+    4. Identar y hacer cÃ³digo LINDO
 
  */
 @font-face {
@@ -49,7 +49,7 @@ body
 	background: #EFEFEF;
 	color: #4C4C4C;
 	font-family: "PT Sans", Arial;
-	font-size: 16px; /* Aconsejable que tamaño sea 16 para lectura como minimo */
+	font-size: 16px; /* Aconsejable que tamaÃ±o sea 16 para lectura como minimo */
 	margin: 0;
 }
 footer
@@ -71,9 +71,9 @@ header
 	/*
     Pensar en pixeles en margenes y padding segun mejorando.la es un error
     se debe usar valores expresados en "em", el cual es valor variable en css
-    que es relativo al tamaño de fuente mas cercana dirigiendo hacia arriba en el
+    que es relativo al tamaÃ±o de fuente mas cercana dirigiendo hacia arriba en el
     arbol de html (busqueda hacia los padres del elemento).
-    Es mejor pensar en margenes y padding relativos al tamaño de fuentes y no
+    Es mejor pensar en margenes y padding relativos al tamaÃ±o de fuentes y no
     al pixel perfect debido a las diferentes resoluciones en las que
     se puede visualizar nuestra pagina
     (em puede ser aplicado a cualquier cosa no especialmente margin y padding)
@@ -117,10 +117,10 @@ header #avatar figcaption
 	background: #22BCE0;
 	float: right;
 	height: 50px;
-    /* la manera mas facil de centrar texto verticalmente es hacer el tamaño
-    de las lineas igual al tamaño de la altura del contenedor
+    /* la manera mas facil de centrar texto verticalmente es hacer el tamaÃ±o
+    de las lineas igual al tamaÃ±o de la altura del contenedor
     */
-    line-height: 50px; /* tamaño de linea igual al contenedor */
+    line-height: 50px; /* tamaÃ±o de linea igual al contenedor */
 }
 header #avatar figcaption::after
 {
@@ -320,7 +320,7 @@ nav #publicar_nav a
 }
 .selectoConflicto
 {
-	es: "";	
+	df: "";		
 }
 
 
